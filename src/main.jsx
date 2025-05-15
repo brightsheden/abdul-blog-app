@@ -9,6 +9,8 @@ import App from './App.jsx'
 import LoginScreen from './Screens/LoginScreen.jsx';
 import RegisterScreen from './Screens/RegisterScreen.jsx';
 import HomeScreen from './Screens/HomeScreen.jsx';
+import BlogDetails from './Screens/BlogDetails.jsx';
+
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,11 @@ const router = createBrowserRouter([
     path: "/register",
     element:<RegisterScreen/>,
   },
+
+  {
+    path: "/blog",
+    element:<BlogDetails/>,
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
